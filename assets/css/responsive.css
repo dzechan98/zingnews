@@ -99,11 +99,13 @@
   .section-lifestyle__content .hang6 {
     margin-bottom: 20px;
   }
+  .footer-block {
+    display: block !important;
+  }
   .footer__text-margin,
   .footer-col {
     margin: 0;
   }
-
   .footer__last {
     display: flex;
     flex-direction: column;
