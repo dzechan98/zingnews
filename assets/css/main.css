@@ -570,6 +570,10 @@
   padding-right: 16px;
   position: relative;
 }
+.footer__link1 {
+  margin-right: 0;
+  padding-right: 0;
+}
 .footer__link::before {
   position: absolute;
   content: "";

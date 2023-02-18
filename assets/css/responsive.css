@@ -79,7 +79,9 @@
     margin-top: 70px;
     flex-direction: column-reverse;
   }
-
+  .section-lifestyle__content-item:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
   .item {
     margin-top: 20px;
   }
@@ -89,6 +91,10 @@
   }
   .section-content__item-img {
     height: 100px;
+  }
+  .section-life__content-list:last-child
+    .section-lifestyle__content-item:last-child {
+    border-bottom: 0;
   }
   .section-lifestyle__content .hang6 {
     margin-bottom: 20px;
