@@ -7,9 +7,7 @@
     <title>ZingNews</title>
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- ai bày main bỏ tr3n base ?????
-    ai pic 
-  cdlllll -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/res.css" />
     <link
       rel="stylesheet"
@@ -21,6 +19,13 @@
       <header class="header">
         <div class="grid wide">
           <div class="header__app">
+            <li class="header__menu-item hide-on-pc">
+              <a
+                href=""
+                class="header__menu-item-link header__menu-item-link--active"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></a>
+            </li>
             <div class="header__logo">
               <a href="" class="logo__link">
                 <span class="logo__link-text">TẠP CHÍ TRI THỨC TRỰC TUYẾN</span>
@@ -29,7 +34,7 @@
                 </div>
               </a>
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu hide-on-tablet">
               <li class="header__menu-item">
                 <a href="" class="header__menu-item-link">Xuất bản</a>
               </li>
@@ -72,7 +77,7 @@
       </header>
       <div class="container">
         <div class="grid wide">
-          <section class="widget-ticker">
+          <section class="widget-ticker hide-on-tablet">
             <ul class="widget-ticker__menu">
               <li class="widget-ticker__item--icon">
                 <a href="" class="widget-ticker__item-link">
@@ -103,17 +108,9 @@
               </div>
             </div>
           </section>
-          <div class="row">
-            <div class="col l-4">
-              <div class="hang4__item">
-                <img
-                  src="assets/img/neymar.jfif"
-                  alt=""
-                  class="hang4__item-img"
-                />
-                <p class="article-title">PSG muốn bán neymar</p>
-              </div>
-              <div class="hang4__item">
+          <div class="row tablet">
+            <div class="col l-4 m-5 c-12">
+              <div class="hang4__item hang4__item-tablet">
                 <img
                   src="assets/img/vanquyet_zing_1.jpg"
                   alt=""
@@ -122,6 +119,14 @@
                 <p class="article-title">
                   HLV CLB Hà Nội: 'Tôi còn có thể nói gì về Văn Quyết nữa đây?'
                 </p>
+              </div>
+              <div class="hang4__item">
+                <img
+                  src="assets/img/neymar.jfif"
+                  alt=""
+                  class="hang4__item-img"
+                />
+                <p class="article-title">PSG muốn bán neymar</p>
               </div>
               <div class="hang4__item">
                 <img
@@ -151,7 +156,7 @@
                 <p class="article-title">PSG muốn bán neymar</p>
               </div>
             </div>
-            <div class="col l-5">
+            <div class="col l-5 m-7 c-12">
               <div class="hang5-item">
                 <img
                   src="assets/img/dm.jpg"
@@ -163,20 +168,49 @@
                     >CLB Hà Nội chiếm ngôi đầu sau trận thắng Hà Tĩnh</a
                   >
                 </h3>
-                <span class="hang5__item-link-text"
+                <span class="hang5__item-link-text hide-on-tablet"
                   >Chiến thắng 3-2 trước CLB Hà Tĩnh giúp Hà Nội có 7 điểm và
                   vượt Thanh Hóa trên bản xếp hạng V.Leagua nhờ nhỉnh hơn hiệu
                   số bàn thắng - bại
                 </span>
-                <li class="type-video">
+                <li class="type-video hide-on-tablet">
                   <a href=""
                     ><i class="fa-regular fa-circle-play"></i>Thái Quý ghi bàn
                     hạ Văn Lâm từ hơn 70m</a
                   >
                 </li>
               </div>
+              <div class="hide-on-pc item">
+                <div class="row">
+                  <div class="col m-6 c-6">
+                    <div class="hang3__item">
+                      <img
+                        src="assets/img/nguyenvandat_phatdat_PDR_2.jpg"
+                        alt=""
+                        class="hang3__item-link-img section-layout4__item-one__img"
+                      />
+                      <p class="article-title">
+                        Mirae Asset bán nhầm 5 triệu cổ phần Bất động sản Phát
+                        Đạt
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col m-6 c-6">
+                    <div class="hang3__item">
+                      <img
+                        src="assets/img/ezgif.com_gif_maker_3_.jpg"
+                        alt=""
+                        class="hang3__item-link-img section-layout4__item-one__img"
+                      />
+                      <p class="article-title">
+                        Sở GD&ĐT TP.HCM lập đoàn thanh tra hệ thống Apax Leaders
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col l-3">
+            <div class="col l-3 m-0 hide-on-mobile">
               <div class="hang3__item">
                 <img
                   src="assets/img/nguyenvandat_phatdat_PDR_2.jpg"
@@ -203,7 +237,7 @@
             <section class="section-multimedia">
               <div class="section-multimedia__header">
                 <h3 class="section-multimedia__heading">MULTIMEDIA</h3>
-                <ul class="section-multimedia__header-menu">
+                <ul class="section-multimedia__header-menu hide-on-tablet">
                   <li class="section-multimedia__header-item">
                     <a href="" class="section-multimedia__header-link">VIDEO</a>
                   </li>
@@ -226,8 +260,12 @@
                 </ul>
               </div>
             </section>
-            <div class="col l-6 hang6">
-              <img src="assets/img/8.jpg_zing.jpg" alt="" class="hang6__img" />
+            <div class="col l-6 hang6 m-12">
+              <img
+                src="assets/img/8.jpg_zing.jpg"
+                alt=""
+                class="hang6__img-full"
+              />
               <a href="" class="hang6__link-title"
                 >Hàng trăm mét kè bê tông biển Tam Thanh bị sóng đánh hỏng</a
               >
@@ -236,10 +274,10 @@
                 bị sóng đánh gây sạt lỡ khiến người dân ở xung quanh lo lắng.
               </p>
             </div>
-            <div class="col l-6 hang6-2">
+            <div class="col l-6 hang6-2 m-12 c-12">
               <div class="hang6-2__item">
                 <div class="row">
-                  <div class="col l-6 hang6-2__card">
+                  <div class="col l-6 hang6-2__card m-6 c-6">
                     <img
                       src="assets/img/ryan_ha_viet_kieu_phap_zing_6__1.jfif"
                       alt=""
@@ -250,21 +288,21 @@
                       V.League
                     </p>
                   </div>
-                  <div class="col l-6 hang6-2__card">
+                  <div class="col l-6 hang6-2__card m-6 c-6">
                     <img src="assets/img/li.jfif" alt="" class="hang6__img" />
                     <p class="article-title">
                       Napoli tạo khoảng cách chưa từng có trong lịch sử đua vô
                       địch Serie A
                     </p>
                   </div>
-                  <div class="col l-6 hang6-2__card">
+                  <div class="col l-6 hang6-2__card m-6 c-6">
                     <img src="assets/img/li.jfif" alt="" class="hang6__img" />
                     <p class="article-title">
                       Napoli tạo khoảng cách chưa từng có trong lịch sử đua vô
                       địch Serie A
                     </p>
                   </div>
-                  <div class="col l-6 hang6-2__card">
+                  <div class="col l-6 hang6-2__card m-6 c-6">
                     <img
                       src="assets/img/ryan_ha_viet_kieu_phap_zing_6__1.jfif"
                       alt=""
@@ -284,7 +322,7 @@
               <h3><span>/</span> BOOK</h3>
             </header>
             <section class="section-publish__content row">
-              <div class="col l-2-4">
+              <div class="col l-2-4 m-4">
                 <div class="section-publish__content-item">
                   <img
                     src="assets/img/MG_9003.jpg"
@@ -298,7 +336,7 @@
                   >
                 </div>
               </div>
-              <div class="col l-2-4">
+              <div class="col l-2-4 m-4 c-0">
                 <div class="section-publish__content-item">
                   <img
                     src="assets/img/MG_9003.jpg"
@@ -312,7 +350,7 @@
                   >
                 </div>
               </div>
-              <div class="col l-2-4">
+              <div class="col l-2-4 m-4 c-0">
                 <div class="section-publish__content-item">
                   <img
                     src="assets/img/MG_9003.jpg"
@@ -326,8 +364,8 @@
                   >
                 </div>
               </div>
-              <div class="col l-2-4">
-                <div class="section-publish__content-item">
+              <div class="col l-2-4 m-4 c-0">
+                <div class="section-publish__content-item hide-on-tablet">
                   <img
                     src="assets/img/MG_9003.jpg"
                     alt=""
@@ -340,8 +378,8 @@
                   >
                 </div>
               </div>
-              <div class="col l-2-4">
-                <div class="section-publish__content-item">
+              <div class="col l-2-4 m-4 c-0">
+                <div class="section-publish__content-item hide-on-tablet">
                   <img
                     src="assets/img/MG_9003.jpg"
                     alt=""
@@ -462,7 +500,7 @@
               </div>
             </div>
             <div class="col l-4">
-              <div class="read__lot">
+              <div class="read__lot hide-on-tablet">
                 <h3 class="read__lot-title">Đọc nhiều</h3>
                 <div class="read__lot-item">
                   <img
@@ -517,7 +555,7 @@
                   </div>
                 </div>
               </div>
-              <section class="section__podcast">
+              <section class="section__podcast hide-on-tablet">
                 <div class="section__podcast-heading">
                   <img src="assets/img/logo_podcast_white.png" alt="" />
                 </div>
@@ -571,8 +609,12 @@
               <h3>/ <a href="">LIFESTYLE</a></h3>
             </header>
             <section class="section-lifestyle__content row">
-              <div class="col l-6 hang6">
-                <img src="assets/img/IMGC7214.jfif" alt="" class="hang6__img" />
+              <div class="col l-6 hang6 m-8 c-12">
+                <img
+                  src="assets/img/IMGC7214.jfif"
+                  alt=""
+                  class="hang6__img-full"
+                />
                 <a href="" class="hang6__link-title"
                   >Những chiếc váy tiền triệu chỉ mặc một lần</a
                 >
@@ -582,7 +624,7 @@
                   xuất hiện trên trang thanh lý với mức giá tiết kiệm.
                 </p>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 hide-on-mobile">
                 <div class="hang3__item">
                   <img
                     src="assets/img/Screen_Shot_2023_02_15_at_21.34.jpg"
@@ -605,7 +647,37 @@
                   </p>
                 </div>
               </div>
-              <div class="col l-3 section-life__content-list">
+              <div class="mobile hide-on-tablet hide-on-pc">
+                <div class="row">
+                  <div class="col l-3 m-4 c-6">
+                    <div class="hang3__item">
+                      <img
+                        src="assets/img/IMGC7214.jfif"
+                        alt=""
+                        class="hang3__item-link-img"
+                      />
+                      <p class="article-title section-lifestyle__content-title">
+                        Màu hồng Barbie bị soán ngôi
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-6">
+                    <div class="hang3__item">
+                      <img
+                        src="assets/img/IMGC7214.jfif"
+                        alt=""
+                        class="hang3__item-link-img"
+                      />
+                      <p class="article-title section-lifestyle__content-title">
+                        Màu hồng Barbie bị soán ngôi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col l-3 hide-on-tablet hide-on-mobile section-life__content-list c-12"
+              >
                 <div class="section-lifestyle__content-item">
                   <a href="" class="section-lifestyle__content-link"
                     >Túi sách cỡ XXL được các sao săn đón</a
@@ -647,19 +719,67 @@
                   />
                 </div>
               </div>
+              <div class="col m-12 l-0 c-12">
+                <div class="row">
+                  <div class="col m-6 section-life__content-list c-12">
+                    <div class="section-lifestyle__content-item">
+                      <a href="" class="section-lifestyle__content-link"
+                        >Túi sách cỡ XXL được các sao săn đón</a
+                      >
+                      <img
+                        src="assets/img/kimpetrs_1.jpg"
+                        alt=""
+                        class="section-lifestyle__content-img"
+                      />
+                    </div>
+                    <div class="section-lifestyle__content-item">
+                      <a href="" class="section-lifestyle__content-link"
+                        >Túi sách kiêm luôn vòng tay</a
+                      >
+                      <img
+                        src="assets/img/photo_6285238133352150175_y.jpg"
+                        alt=""
+                        class="section-lifestyle__content-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="col m-6 section-life__content-list c-12">
+                    <div class="section-lifestyle__content-item">
+                      <a href="" class="section-lifestyle__content-link"
+                        >Hối hận khi rời bỏ công ty cũ</a
+                      >
+                      <img
+                        src="assets/img/OZO7TLCZH5FIDOYZOIPUPNLC3I.jpg"
+                        alt=""
+                        class="section-lifestyle__content-img"
+                      />
+                    </div>
+                    <div class="section-lifestyle__content-item">
+                      <a href="" class="section-lifestyle__content-link"
+                        >Góc làm việc rườm rà chỉ làm mất tập trung
+                      </a>
+                      <img
+                        src="assets/img/Biet_thu_737_1.jpg"
+                        alt=""
+                        class="section-lifestyle__content-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
           </section>
           <section class="section-layout4">
             <div class="layout4">
               <div class="row">
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">XUẤT BẢN</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
                         src="assets/img/Screen_Shot_2023_02_13_at_16.18.37.png"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Batman làm hòa với một kẻ thù lâu năm
@@ -692,14 +812,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">SÁCH HAY</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
-                        src="assets/img/a1_zing_1.jpg"
+                        src="assets/img/dm.jpg"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Nhạc sĩ Nguyễn Cường - trai phố cổ và những bát cơm sinh
@@ -708,7 +828,7 @@
                     </div>
                     <div class="section-layout4__item-second">
                       <img
-                        src="assets/img/li.jfif"
+                        src="assets/img/Screen_Shot_2023_02_13_at_17.21.jpg"
                         alt=""
                         class="section-layout4__item-second__img"
                       />
@@ -732,14 +852,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">TÁC GIẢ</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
                         src="assets/img/Vodcast_thumbnail.jpg"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Những bức thư tỏ tình trong hộc bàn ngày xưa
@@ -772,14 +892,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">XÃ HỘI</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
                         src="assets/img/331190352_8795576243850804_835585445265779264_n_1.jpg"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Xe Ford Everest bị đá rơi vỡ kính trên cao ốc
@@ -816,14 +936,14 @@
             </div>
             <div class="layout4">
               <div class="row">
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">KINH DOANH</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
                         src="assets/img/Screen_Shot_2023_02_13_at_16.18.37.png"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Đóng cửa gần nửa năm, loạt chủ quán karaoke Hà Nội kêu
@@ -856,14 +976,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">CÔNG NGHỆ</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
-                        src="assets/img/a1_zing_1.jpg"
+                        src="assets/img/vanquyet_zing_1.jpg"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Thảm họa động đất tại Thổ Nhĩ Kỳ qua ảnh vệ tinh mới
@@ -872,7 +992,7 @@
                     </div>
                     <div class="section-layout4__item-second">
                       <img
-                        src="assets/img/li.jfif"
+                        src="assets/img/ezgif.com_resize.gif"
                         alt=""
                         class="section-layout4__item-second__img"
                       />
@@ -898,14 +1018,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">XE</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
                         src="assets/img/Vodcast_thumbnail.jpg"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Siêu xe mui trần Ferrari 296 GTS giá hơn 23 tỷ đồng có
@@ -939,14 +1059,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="col l-3 section-layout4-list">
+                <div class="col l-3 section-layout4-list m-6 c-6">
                   <h3 class="section-layout4__heading">ĐỜI SỐNG</h3>
                   <div class="hang3__item section-layout4__item">
                     <div class="section-layout4__item-one">
                       <img
                         src="assets/img/331190352_8795576243850804_835585445265779264_n_1.jpg"
                         alt=""
-                        class="hang3__item-link-img"
+                        class="hang3__item-link-img section-layout4__item-one__img"
                       />
                       <p class="article-title section-layout4__item-text">
                         Hội chợ ở Trung Quốc bị chỉ trích vì thuê vũ công múa
@@ -984,7 +1104,118 @@
             </div>
           </section>
         </div>
+        <!-- <section class="magazine">
+          <div class="grid wide">
+            <header class="section-magazine-heading section__title">
+              MAGAZINE
+            </header>
+            <div class="row">
+              <div class="col l-3 section-manazine">
+                <div class="section-magazine__item">
+                  <img
+                    src="assets/img/chuyen_1.jpg"
+                    alt=""
+                    class="section-manazine__item-img"
+                  />
+                </div>
+                <span class="section-manazine-label">TL;DR</span>
+                <div class="section-magazine-text">
+                  <p>
+                    "Ẩn ý chửi khán giả, Xuân Bắc cần xin lỗi thay vì im lặng"
+                  </p>
+                  <div class="section-manazine-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 section-manazine">
+                <div class="section-magazine__item">
+                  <img
+                    src="assets/img/chuyen_1.jpg"
+                    alt=""
+                    class="section-manazine__item-img"
+                  />
+                </div>
+                <span class="section-manazine-label">TL;DR</span>
+                <div class="section-magazine-text">
+                  <p>
+                    "Ẩn ý chửi khán giả, Xuân Bắc cần xin lỗi thay vì im lặng"
+                  </p>
+                  <div class="section-manazine-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 section-manazine">
+                <div class="section-magazine__item">
+                  <img
+                    src="assets/img/chuyen_1.jpg"
+                    alt=""
+                    class="section-manazine__item-img"
+                  />
+                </div>
+                <span class="section-manazine-label">TL;DR</span>
+                <div class="section-magazine-text">
+                  <p>
+                    "Ẩn ý chửi khán giả, Xuân Bắc cần xin lỗi thay vì im lặng"
+                  </p>
+                  <div class="section-manazine-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 section-manazine">
+                <div class="section-magazine__item">
+                  <img
+                    src="assets/img/chuyen_1.jpg"
+                    alt=""
+                    class="section-manazine__item-img"
+                  />
+                </div>
+                <span class="section-manazine-label">TL;DR</span>
+                <div class="section-magazine-text">
+                  <p>
+                    "Ẩn ý chửi khán giả, Xuân Bắc cần xin lỗi thay vì im lặng"
+                  </p>
+                  <div class="section-manazine-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
       </div>
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-8 footer-col">
+              <img src="logo.svg" alt="" class="footer__logo" />
+              <p class="footer__text">
+                Tạp chí điện tử Tri thức trực tuyến <br />
+                Cơ quan chủ quản: Hội xuất bản Việt Nam <br />
+                Giấy phép báo chí: số 75/GP-BTTTT do Bộ Thông tin và Truyền
+                thông cấp ngày 26/02/2020 <br />
+                Phó tổng biên tập phụ trách: Lâm Quang Hiếu <br />
+                <i class="fa-regular fa-copyright"></i>Toàn bộ bản quyền thuộc
+                Tri thức trực tuyến
+              </p>
+            </div>
+            <div class="col l-4 footer__last hide-on-tablet-no-mobile">
+              <p class="footer__text footer__text-margin">
+                Tòa soạn: Tầng 7, D29 Phạm Văn Bạch, Quận Cầu Giấy, Hà Nội
+                <br />
+                Hotline: 0931.222.666 <br />
+              </p>
+              <div class="footer__item">
+                <a href="" class="footer__link">Liên hệ </a>
+                <a href="" class="footer__link">Tuyển dụng</a>
+                <a href="" class="footer__link1">Quảng cáo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
